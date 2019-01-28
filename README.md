@@ -1,2 +1,2 @@
-# tribute
-FreeCodeCamp Project 1 Tribute Page
+# tributeBessie
+FreeCodeCamp Project 1 Tribute Page - Bessie Coleman
