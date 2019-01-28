@@ -1,0 +1,820 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles * VAL MOD *
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: 'Playfair Display', serif, "Open Sans","Helvetica Neue",sans-serif;
+  background-color: whitesmoke; 
+}
+
+
+/*
+ * DEFAULT STYLES
+ */
+
+h2, h3, h4, h5, h6    { margin: 1em 0em 0em 0em; 
+                        font-size: 1.48em;
+                        text-align: left;
+}
+
+a:active                      { color: #271c32; } 
+a:hover                       { color: #271c32; }
+a:visited                     { color: #3e0e6b; }
+
+
+img { max-width: 100%; 
+      display: block;
+      height: auto; 
+}
+
+/*
+ * FIRST GRID
+ */
+
+.main .wrapper {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.0em;
+  background-color: lightgrey;
+  color: #555555;
+}
+
+/*
+ * SECOND GRID - grid within a grid
+ *
+ *  <main> is its own HTML5 tag and is used so Reader View picks up the entire article.
+ *  TODO:  RENAME 2nd grid to .grid2 in html file.
+ *  TODO:  CHANGE class .main to .grid2 in html files.
+ *  TODO:  REMOVE .main from CSS after all html files dependent on this CSS are updated. 
+ */
+
+.main, .mainstyle, .grid2 {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 1fr 0.75fr 0.75fr 0.75fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.0em;
+  background-color: whitesmoke;
+  color: #555555;
+}
+
+div {
+  padding: 1em; 
+}
+
+/*
+ * LINKS
+ */
+
+ #headerrow a, #headerrow a:link, 
+ #headerrow a:visited, .valmodu 
+                              { text-decoration: none; }
+
+#headerrow a, #headerrow a:link, 
+#headerrow a:visited          { color: #efe8f3; }
+#mainbody a, #mainbody a:link { color: #8b10d2; }
+
+
+
+
+/*
+ * FONTS
+ */
+
+#headerrow, #headerrow a, .navprevnext a, .navprevnext, .articlemeta, #toc, #toc a {
+  font-family: "Open Sans","Helvetica Neue",Arial, Helvetica, sans-serif;
+}
+
+/*
+ * SPECIAL AREAS
+ *  til         --> Today I learned
+ *  navprevnext --> The "You are Here" navigation
+ */
+
+.navprevnext {
+  font-size: 0.8em;
+}
+
+.til {
+  font-weight: 600;
+  color: midnightblue;
+}
+
+/*
+ * SHIMS
+ */
+
+.shim1emlr {
+  padding: 0em 1em 0em 1em; 
+}
+
+/*
+ * WRAPPER (grid) ROW 1
+ */
+
+#headerrow {
+  grid-row: 1 / 1;
+  grid-column: 1 / -1;
+  /* background-color: #8d9ac6;  sands */ 
+  background-color: #09A7A1; /* dnusa #09A7A1 smax #1b5dd8; */ 
+}
+
+/*
+ * WRAPPER (grid) ROW 2, 
+ */
+ 
+ /*   Second row of the first grid, 
+   *  in the FIRST ROW of the grid within a grid called "MAINSTYLE."
+  */ 
+#title {
+  margin: 0% 15% 0% 15%;
+  padding: 0;
+  text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#title h1 {
+  margin: 0;
+  font-size: 2.3em; 
+  color: #555555;
+}
+
+#title .subtitle, #title h2  {
+  margin: 0;
+  font-size: 1.2em; 
+  color: #777777;
+  text-align: center;
+}
+
+.firstrow h2, #intro1 h2    { text-align: center;
+                              margin: 1em 0em 0em 0em; 
+}
+
+
+/*   ARTICLEMETA
+ *   Displayed in the third row of the first grid, 
+ *   in the SECOND ROW, FIRST COLUMN of the grid within a grid called "MAIN."
+ */ 
+.articlemeta {
+  font-size: 0.95em; 
+  color: #777777;
+  text-align: center; 
+}
+
+.articlemeta img {
+  margin: 0 0 2% 0;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 1px;
+  border: 1px solid #3f1690;
+}
+
+/*   Introductory paragraphs 
+   *  Displayed in the third row of the first grid, 
+   *  in the SECOND ROW, SECOND COLUMN of the grid within a grid called "MAIN."
+*/ 
+#intro1, .firstrow, .nextrow {
+    margin-top: -1em;
+    padding-top: 0; 
+    grid-row: auto / auto;
+    grid-column: 2 / span 3;
+    /* grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+#intro2 {
+   grid-row: auto / auto; 
+   grid-column-start: 2;
+   grid-column-end: 5;
+}
+
+#mainbody {
+  /*
+  * The old colspan technique, now grid-area which is shorthand for this: 
+  */
+   grid-row-start: auto;
+   grid-row-end: auto;
+   grid-column-start: 2;
+   grid-column-end: 5;
+}
+
+.intro, #intro1, #intro2, #mainbody {
+  text-align: justify; 
+}
+
+#footerrow {
+  /*
+  * The old colspan technique, now grid-area which is shorthand for this: 
+  */
+    grid-row: auto / auto;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+p {  
+  font-size: 1.2em;
+  line-height: 1.65em;
+}
+
+.b {font-weight: 600;}
+
+li {
+  margin: 0.8em 0em 0em 1.2em;
+  line-height: 1.5em;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+
+/* ========================================================================== 
+  CREDIT:  Gokulakrishnan Kalaikovan / https://gist.github.com/gokulkrishh 
+
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+  
+  /* CSS VAL MOD ALL OF IT */
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1.0em;
+
+  }
+  
+  #headerrow {
+    grid-row: 1 / 1;
+    grid-column: 1 / -1;
+  }
+    
+ .main, .mainstyle, .grid2 {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.0em;
+ }
+
+  #title {
+      grid-row-start: auto;
+      grid-row-end: -1;
+      grid-column-start: 1;
+      grid-column-end: -1;
+  }
+  
+  #title h1 {
+    margin: 0;
+    font-size: 2.3em; 
+    color: #555555;
+  }
+  
+  #title .subtitle {
+    margin: 0;
+    font-size: 1.2em; 
+    color: #777777;
+  }
+  
+  #articlemeta {
+    grid-row: auto / auto;
+    grid-column: 1 / -1;
+  }
+  
+  
+  .firstrow, .nextrow, #intro1 {
+      grid-row: auto / auto;
+      grid-column: 1 / -1;
+  }
+  
+  #intro2 {
+     grid-row-start: auto;
+     grid-row-end: auto;
+     grid-column-start: 1;
+     grid-column-end: 1;
+  }
+  
+  #mainbody {
+     grid-row-start: auto;
+     grid-row-end: auto;
+     grid-column-start: 1;
+     grid-column-end: 1;
+  }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+
+}*/
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  
+/* CSS VAL MOD ALL OF IT */
+.wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.0em;
+
+}
+
+#headerrow {
+  grid-row: 1 / 1;
+  grid-column: 1 / -1;
+}
+  
+.main, .mainstyle, .grid2 {
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-gap: 1.0em;
+}
+
+#title {
+    grid-row-start: auto;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#title h1 {
+  margin: 0;
+  font-size: 1.25em; 
+  color: #555555;
+}
+
+#title .subtitle {
+  margin: 0;
+  font-size: 1.0em; 
+  color: #777777;
+}
+
+#articlemeta {
+  grid-row: auto / auto;
+  grid-column: 1 / -1;
+}
+
+/*   ARTICLEMETA
+   *  Hide all of the meta except the name and image 
+*/ 
+.articlemeta span {
+  display: none; 
+  visibility: hidden; 
+}
+
+.articlemeta:after {
+  content: 'by Valerie Lynn';
+  visibility: visible;
+  display: block;
+}
+
+.firstrow, .nextrow, #intro1 {
+    grid-row: auto / auto;
+    grid-column: 1 / -1;
+}
+
+#intro2 {
+   grid-row-start: auto;
+   grid-row-end: auto;
+   grid-column-start: 1;
+   grid-column-end: 1;
+}
+
+#mainbody {
+   grid-row-start: auto;
+   grid-row-end: auto;
+   grid-column-start: 1;
+   grid-column-end: 1;
+}
+
+.firstrow, .nextrow, #intro1, #intro2, #mainbody {
+  text-align: left; 
+}
+  
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+ /* CSS VAL MOD ALL OF IT */
+ .wrapper {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.0em;
+
+}
+
+#headerrow {
+  grid-row: 1 / 1;
+  grid-column: 1 / -1;
+}
+  
+.main, .mainstyle, .grid2 {
+grid-template-columns: 1fr;
+grid-template-rows: auto;
+grid-gap: 1.0em;
+}
+
+#title {
+    grid-row-start: auto;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+#title h1 {
+  margin: 0;
+  font-size: 1.25em; 
+  color: #555555;
+}
+
+#title .subtitle {
+  margin: 0;
+  font-size: 1.0em; 
+  color: #777777;
+}
+
+#articlemeta {
+  grid-row: auto / auto;
+  grid-column: 1 / -1;
+}
+
+/*   ARTICLEMETA
+   *  Hide all of the meta except the name and image 
+*/ 
+.articlemeta span {
+  display: none; 
+  visibility: hidden; 
+}
+
+.articlemeta:after {
+  content: 'by Valerie Lynn';
+  visibility: visible;
+  display: block;
+}
+
+.firstrow, .nextrow, #intro1 {
+    grid-row: auto / auto;
+    grid-column: 1 / -1;
+}
+
+#intro2 {
+   grid-row-start: auto;
+   grid-row-end: auto;
+   grid-column-start: 1;
+   grid-column-end: 1;
+}
+
+#mainbody {
+   grid-row-start: auto;
+   grid-row-end: auto;
+   grid-column-start: 1;
+   grid-column-end: 1;
+}
+
+.firstrow, .nextrow, #intro1, #intro2, #mainbody {
+  text-align: left; 
+}
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
