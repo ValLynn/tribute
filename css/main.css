@@ -94,17 +94,15 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles * VAL MOD *
+   Author's custom styles
    ========================================================================== */
 
-* {
-    box-sizing: border-box;
-  }
+* { box-sizing: border-box; }
 
 body {
   font-family: 'Work Sans', sans-serif;
   background-color: whitesmoke; 
-}
+  }
 
 
 /*
@@ -113,21 +111,33 @@ body {
 
 h1, h2, h3, h4, h5, h6  { }
 
-a, a:active                   { color: #38264b; } 
-a:hover                       { color: #271c32; }
-a:visited                     { color: #3e0e6b; }
-
-
-img { max-width: 100%; 
-      display: block;
-      height: auto; 
+a, a:active     { color: #38264b; } 
+a:hover         { color: #271c32; }
+a:visited       { color: #3e0e6b; }
+ 
+ 
+img { 
+  max-width: 100%; 
+  display: block;
+  height: auto; 
 }
+
+  div {
+    padding: 1em; 
+}
+  
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+ 
+
 
 /*
  * FIRST GRID
  */
 
-.main .wrapper {
+ .main .wrapper {
   display: grid;
   margin: 0;
   grid-template-columns: 1fr;
@@ -138,25 +148,11 @@ img { max-width: 100%;
 }
 
 
-
-div {
-  padding: 1em; 
-}
-
-
-
 #title {
-  margin: 0% 15% 0% 15%;
-  padding: 0;
-  text-align: center;
+    margin: 0% 15% 0% 15%;
+    padding: 0;
+    text-align: center;
 }
-
-#title h1 {
-  margin: 0;
-  font-size: 2.3em; 
-  color: #555555;
-}
-
 
 #mainbody {
   /*
@@ -165,21 +161,6 @@ div {
    grid-row-start: auto;
    grid-row-end: auto;
 }
-
-
-
-iframe {
-  display: block;
-  margin: 0 auto;
-}
-
-
-
-
-
-
-
-
 
 
 
@@ -273,6 +254,77 @@ iframe {
    Modify as content requires.
    ========================================================================== */
 
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  //CSS
+  
+}
+
+
+
+
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
@@ -283,73 +335,6 @@ iframe {
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
-
-
-/* ========================================================================== 
-  CREDIT:  Gokulakrishnan Kalaikovan / https://gist.github.com/gokulkrishh 
-
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-  }
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  }
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px)  {
-
-  }
-
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-  }
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-
-  }
-
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
- 
-  }
-
-  
-}
-
 
 /* ==========================================================================
    Print styles.
