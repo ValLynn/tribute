@@ -134,10 +134,10 @@ iframe {
 
 
 /*
- * FIRST GRID
+ * GRID
  */
 
- .main .wrapper {
+ .main {
   display: grid;
   margin: 0;
   grid-template-columns: 1fr;
