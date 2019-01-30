@@ -101,7 +101,7 @@ textarea {
 
 body {
   font-family: 'Work Sans', sans-serif;
-  background-color: whitesmoke; 
+  background-color: lavender; 
   }
 
 
@@ -153,14 +153,6 @@ iframe {
     margin: 0% 15% 0% 15%;
     padding: 0;
     text-align: center;
-}
-
-#mainbody {
-  /*
-  * The old colspan technique, now grid-area which is shorthand for this: 
-  */
-   grid-row-start: auto;
-   grid-row-end: auto;
 }
 
 
