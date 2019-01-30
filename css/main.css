@@ -137,7 +137,7 @@ iframe {
  * GRID
  */
 
- .main {
+ #main {
   display: grid;
   margin: 0;
   grid-template-columns: 1fr;
@@ -146,6 +146,7 @@ iframe {
   background-color: #f8f5ff;
   color: #555555;
 }
+
 
 
 #title {
