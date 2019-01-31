@@ -167,6 +167,8 @@ iframe {
 .row3 {
   grid-row-start: 3;
   grid-row-end: auto;
+  border-radius: 2px;
+  background-color: lavender;
 }
 
 
@@ -196,7 +198,9 @@ iframe {
     display: block;
 }
 
-
+#tribute-info {
+  
+}
 
 
 /* ==========================================================================
