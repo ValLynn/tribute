@@ -19,16 +19,17 @@
   <body>
     <!--  Requirement #1 MAIN contains all other elements -->
     <!--  My tribute page should have an element with a corresponding id="main", which contains all other elements. -->
+    <!-- OPINION:  I would prefer to name the container that holds the grid something like, uhh... CONTAINER  -->
     <div id="main"> 
-
-      <header>
-        <!-- Requirement #2 TITLE  -->
-        <!-- I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page. -->
-        <h1 id="title">Bessie Coleman</h1> 
-
-        <p>Lady of the Sky</p>
+      <article>
+        <header>
+          <!-- Requirement #2 TITLE  -->
+          <!-- I should see an element with a corresponding id="title", which contains a string (i.e. text) that describes the subject of the tribute page. -->
+          <h1 id="title">Bessie Coleman</h1> 
+          <p class="subtitle">Lady of the Sky</p>
       </header>
-      
+
+
       <!-- Requirement #3 #8, #9 IMG  -->
         <!-- I should see a div element with a corresponding id="img-div" -->
         <!-- IMAGE must be responsive & resize relative to width of parent -->
@@ -43,7 +44,7 @@
          
           <a href="" title="" target="_blank"> <!-- us#7 Link to more info about Bessie goes here --> </a>
         </div>
-    
+      </article>  <!-- end article about Bessie Coleman -->
     </div>  <!-- end main div -->
   </body>
 </html>
