@@ -142,8 +142,8 @@ iframe {
  #main {
   display: grid;
   margin: 0 auto 0;
-  grid-template-columns: 1fr;
-  grid-template-rows: 3fr;
+  grid-template-columns: 1fr;   /* 1 column   */
+  grid-template-rows: auto auto auto;      /* 3 rows     */
   grid-gap: 1.0em;
   width: 98%;
   background-color: #f8f5ff;
@@ -173,6 +173,10 @@ iframe {
 
 #image {
   
+}
+
+#img-caption { 
+    text-align: center;
 }
 
 
