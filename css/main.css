@@ -162,8 +162,15 @@ iframe {
 .subtitle { 
     text-align: center;
     font-size: 1.3em; 
-    font-weight: 700;
+    font-weight: 600;
+}
 
+#img-div {
+
+}
+
+#image {
+  
 }
 
 
