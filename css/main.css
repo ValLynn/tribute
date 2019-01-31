@@ -144,7 +144,7 @@ iframe {
   display: grid;
   margin: 0 auto 0;
   grid-template-columns: 1fr;   /* 1 column   */
-  grid-template-rows: auto auto auto;      /* 3 rows     */
+  grid-template-rows: auto auto auto auto;      /* 3 rows     */
   grid-gap: 1.0em;
   width: 98%;
   background-color: #f8f5ff;
@@ -199,7 +199,7 @@ iframe {
 }
 
 #tribute-info {
-  
+
 }
 
 
