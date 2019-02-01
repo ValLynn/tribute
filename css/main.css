@@ -136,8 +136,18 @@ iframe {
  
 blockquote {
   text-align: center;
+  font-weight: 600;
+  ont-style: italic;
 }
 
+hr {
+  margin: 1em auto 0;
+  width: 80%;
+  border-top: 0.17em solid purple;
+  border-bottom: 0.17em solid purple;
+  border-radius: 0.12em;
+
+}
 /*
  * GRID
  */
@@ -146,8 +156,8 @@ blockquote {
   display: grid;
   margin: 0 auto 0;
   grid-template-columns: 1fr;   /* 1 column   */
-  grid-template-rows: auto auto auto auto;      /* 3 rows     */
-  grid-gap: 1.0em;
+  grid-template-rows: auto auto auto auto;      /* 4 rows     */
+  /* grid-gap: 1.0em;  */
   width: 98%;
   background-color: #f8f5ff;
   font-size: 1.3em;
