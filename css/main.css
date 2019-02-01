@@ -134,7 +134,9 @@ iframe {
   margin: 0 auto;
 }
  
-
+blockquote {
+  text-align: center;
+}
 
 /*
  * GRID
